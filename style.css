@@ -35,13 +35,19 @@ a:hover {
   color: brown;
 }
 
+.social {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
 .toolbar {
   display: flex;
   flex-direction: row;
   background-color: #3c3a39;
   align-items: center;
-  align-content: space-between;
-  width: 422px;
+  justify-content: space-between;
+  width: 100%;
   height: 92px;
   position: absolute;
   left: 0;
@@ -58,15 +64,17 @@ a:hover {
   padding: 120px 24px;
   gap: 12px;
   position: absolute;
-  width: 375px;
-  height: 590px;
+  width: 100%;
+  height: 768px;
   left: 0;
   top: 92px;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   align-content: center;
-  width: 327px;
+  width: 100%;
   height: 124px;
   flex: none;
   flex-grow: 0;
@@ -76,15 +84,18 @@ a:hover {
   order: 0;
 }
 
-@media (max-width: 300px) {
-  .toolbar {
+@media (max-width: 375px) {
+  .toolbar,
+  .social {
     flex-direction: column;
     align-content: center;
   }
 }
 
-@media (max-width: 300px) {
-  .container {
+@media (max-width: 375px) {
+  .head h1,
+  .head h2,
+  .head p {
     display: none;
   }
 }

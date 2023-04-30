@@ -31,10 +31,10 @@
 - [📝 License](#license)
 
 
-# 📖 [Hello Microverse project] <a name="about-project"></a>
+# 📖 [My first Mobile project] <a name="about-project"></a>
 
 
-**[Hello Microverse project]** Is a personal portfolio made made from scratch using Html, Css and Flexbox.
+**[My first Mobile project]** Is a personal portfolio made made from scratch using Html, Css and Flexbox.
 
 ## 🛠 Built With <a name="built-with"></a>
 
