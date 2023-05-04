@@ -11,10 +11,11 @@ body {
 header {
   height: 70px;
   background-color: #3c3a39;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 
 main {
@@ -24,7 +25,7 @@ main {
 /* Tool bar content */
 
 header .toolbar {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -64,8 +65,7 @@ a:hover {
 .main-section {
   position: relative;
   overflow: hidden;
-  padding: 125px 24px 120px 24px;
-  margin-top: 65px;
+  padding: 120px 24px 120px 24px;
   background-image: url(img/Group.png);
   background-repeat: no-repeat;
   background-position: right 111%;
@@ -119,9 +119,3 @@ a:hover {
   padding: 0;
   gap: 8px;
 }
-
-/* @media screen and (min-width: 768px) {
-  .bars {
-    display: none;
-  }
-} */
