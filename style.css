@@ -173,6 +173,7 @@ a:hover {
 .main-info-section .works-container .multi-post-ul {
   gap: 24px;
   display: flex;
+  list-style: none;
 }
 
 .multi-post-nav {
@@ -226,6 +227,7 @@ a:hover {
   display: flex;
   gap: 12px;
   margin-left: 13px;
+  list-style: none;
 }
 
 .profesional-art-nav {
@@ -279,6 +281,7 @@ a:hover {
   display: flex;
   gap: 12px;
   margin-left: 13px;
+  list-style: none;
 }
 
 .profesional-art-nav-2 {
@@ -332,6 +335,7 @@ a:hover {
   display: flex;
   gap: 12px;
   margin-left: 13px;
+  list-style: none;
 }
 
 .profesional-art-nav-3 {
@@ -385,6 +389,7 @@ a:hover {
   display: flex;
   gap: 12px;
   margin-left: 13px;
+  list-style: none;
 }
 
 .profesional-art-nav-4 {
@@ -438,6 +443,7 @@ a:hover {
   display: flex;
   gap: 12px;
   margin-left: 13px;
+  list-style: none;
 }
 
 .profesional-art-nav-5 {
@@ -523,6 +529,7 @@ a:hover {
   text-align: center;
   gap: 32px;
   margin-top: 137px;
+  list-style: none;
 }
 
 .skills-frameworks {
@@ -533,6 +540,7 @@ a:hover {
   text-align: center;
   gap: 32px;
   margin-top: 44px;
+  list-style: none;
 }
 
 .skills-skills {
@@ -543,13 +551,14 @@ a:hover {
   text-align: center;
   gap: 32px;
   margin-top: 44px;
+  list-style: none;
 }
 
 /* Contact section */
 
 .contact-section {
   position: relative;
-  padding: 69px 24px 11px 24px;
+  padding: 69px 24px 78px 24px;
   background-color: #fff;
 }
 
@@ -569,7 +578,20 @@ a:hover {
   line-height: 44px;
   color: #172b4d;
   text-align: center;
-  margin-bottom: 119px;
+  margin-bottom: 100px;
+}
+
+.form {
+  width: 100%;
+  height: 330px;
+}
+
+.ul-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
 }
 
 .full-name {
@@ -579,36 +601,41 @@ a:hover {
   font-size: 15px;
   line-height: 24px;
   height: 48px;
-  width: 100%;
+  width: 327px;
   left: 0;
   top: 0;
-  border-radius: 0;
+  border: none;
+  color: #979493;
+  border-bottom: 1px solid #979493;
 }
 
 .email-address {
+  position: relative;
   font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   height: 48px;
-  width: 100%;
+  width: 327px;
   left: 0;
   top: 0;
-  border-radius: 0;
+  border: none;
+  color: #979493;
+  border-bottom: 1px solid #979493;
 }
 
 .textarea {
+  position: relative;
   font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+  border: none;
+  background-color: #fbf8f7;
   height: 114px;
-  width: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 0;
+  width: 327px;
 }
 
 .getintouch {
@@ -621,12 +648,11 @@ a:hover {
   color: #fff;
   width: 131px;
   height: 48px;
-  margin-bottom: 78px;
-  text-align: center;
 }
 
-.last-line {
-  margin-bottom: 40px;
+.footer {
+  background-color: #fff;
+  padding: 24px 18px 24px 11px;
 }
 
 .contact-media-container {
