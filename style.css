@@ -214,19 +214,6 @@ ul {
   gap: 24px;
 }
 
-.profesional-art-container {
-  position: relative;
-  background-image: url(img/art1.png);
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  justify-content: flex-end;
-  height: 386px;
-  background-size: cover;
-  border: 1px solid black;
-}
-
 .profesional-art-container-2 {
   position: relative;
   background-image: url(img/placebackgroung.png);
@@ -301,6 +288,7 @@ ul {
   line-height: 24px;
   color: #fff;
   text-align: center;
+  display: none;
 }
 
 /* About me section */
@@ -644,9 +632,51 @@ button:disabled {
     width: 100%;
   }
 
+  .profesional-art-container-Data-Dashboard:hover {
+    background-image: url(img/art1.png);
+    border: 1px solid black;
+
+    .profesional-art-ul {
+      opacity: 0;
+    }
+
+    .profesional-art-p {
+      opacity: 0;
+    }
+
+    .profesional-art-h2 {
+      opacity: 0;
+    }
+
+    .profesional-art-nav {
+      display: block;
+    }
+  }
+
   .profesional-art-container-Website-Portfolio {
     height: 448px;
     width: 100%;
+  }
+
+  .profesional-art-container-Website-Portfolio:hover {
+    background-image: url(img/art1.png);
+    border: 1px solid black;
+
+    .profesional-art-ul {
+      opacity: 0;
+    }
+
+    .profesional-art-p {
+      opacity: 0;
+    }
+
+    .profesional-art-h2 {
+      opacity: 0;
+    }
+
+    .profesional-art-nav {
+      display: block;
+    }
   }
 
   .profesional-art-container {
@@ -657,6 +687,27 @@ button:disabled {
   .profesional-art-container-2 {
     height: 448px;
     width: 100%;
+  }
+
+  .profesional-art-container-2:hover {
+    background-image: url(img/art1.png);
+    border: 1px solid black;
+
+    .profesional-art-ul {
+      opacity: 0;
+    }
+
+    .profesional-art-p {
+      opacity: 0;
+    }
+
+    .profesional-art-h2 {
+      opacity: 0;
+    }
+
+    .profesional-art-nav {
+      display: block;
+    }
   }
 
   /* About me */
@@ -687,6 +738,10 @@ button:disabled {
   .contact-section-container {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .contact-section-media {
+    gap: 20px;
   }
 
   .form {
