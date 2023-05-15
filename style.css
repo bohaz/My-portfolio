@@ -509,12 +509,6 @@ button:enabled {
   border-color: #ff6b00;
 }
 
-button:hover {
-  background-color: #fff5e1;
-  color: #ff6b00;
-  border-color: #ff6b00;
-}
-
 button:visited {
   background-color: #e05304;
   color: #f4f1f0;

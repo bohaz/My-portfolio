@@ -119,7 +119,7 @@ npx stylelint "**/*.{css,scss}"
 
 You can deploy this project using:
 
--Github
+-Github: https://bohaz.github.io/First-mobile-project/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
