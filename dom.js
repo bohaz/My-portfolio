@@ -9,3 +9,11 @@ openButton.addEventListener('click', () => {
 closeButton.addEventListener('click', () => {
   nav.classList.remove('visible');
 });
+
+const menuLinks = document.querySelectorAll(".mobile-menu a[href^='#']");
+
+menuLinks.forEach((menulink) => {
+  menulink.addEventListener('click', () => {
+    nav.classList.remove('visible');
+  });
+});
