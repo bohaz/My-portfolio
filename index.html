@@ -25,8 +25,9 @@
     <div class="toolbar">
       <a class="my-logo" href="index.html"><img src="img/mylogo.png" alt="mylogo"/></a>
       <nav>
-        <a class="bars" href="index.html"><img src="img/Union.png" alt="bars"/></a>
+        <a class="bars" id="open"><img src="img/Union.png" alt="bars"/></a>
       </nav>   
+
       <nav>
         <ul class="desktop-bar">
           <li><a href="index.html"><img src="img/portfolio.png" alt=""/></a></li>
@@ -34,6 +35,17 @@
           <li><a href="index.html"><img src="img/contact.png" alt=""/></a></li>
           <li><a href="index.html"><img src="img/Disabled.png" alt="bars"/></a></li>
         </ul>
+      </nav>
+
+      <nav class="mobile-menu" id="nav">
+        <a class="close-button" id="close"><img src="img/closebotton.png"></a>
+        <ul class="mobile-ul">
+          
+          <li><a href="#portfolio"><img src="img/portfolio-mobile.png" alt="bars"/></a></li>
+          <li><a href="#about"><img src="img/about-mobile.png" alt="bars"/></a></li>
+          <li><a href="#contact"><img src="img/contact-mobile.png" alt="bars"/></a></li>
+        </ul>
+        
       </nav>
     </div>
 
@@ -60,7 +72,7 @@
 
     </section>
 
-    <section class="main-works-section">
+    <section class="main-works-section" id="portfolio">
       <div class="works-container">
         <img src="img/Title.png" alt="" class="works-title">
         <img src="img/Title2.png" alt="" class="works-title-2">
@@ -158,7 +170,7 @@
     
     </section>
 
-    <section class="main-about-me-section">
+    <section class="main-about-me-section" id="about">
         <div class="about-me-container">
           <h2 class="about-me-h2">About me</h2>
           <p class="about-me-p">Hello I’m a software developer! I can help<br>you build a product , feature or website<br>Look through some of my work and<br>experience! If you like what you see and<br>have a project you need coded, don’t<br>hesitate to contact me.</p>
@@ -203,7 +215,7 @@
       
     </section> 
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
 
       <div class="contact-section-container">
         <p class="contact-p">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
@@ -244,6 +256,7 @@
       <img src="img/blackbar.png" alt="" class="black-bar">
     </div>
 
-  </footer>   
+  </footer>
+  <script src="dom.js"></script>   
 </body>
 </html>

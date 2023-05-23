@@ -12,7 +12,7 @@ body {
 header {
   height: 70px;
   background-color: #3c3a39;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -26,7 +26,7 @@ main {
 /* Tool bar content */
 
 header .toolbar {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -55,6 +55,39 @@ header .toolbar .bars {
 
 header .toolbar .desktop-bar {
   display: none;
+}
+
+.mobile-menu {
+  background-color: #3c3a39;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.mobile-ul {
+  list-style: none;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.close-button {
+  display: flex;
+  width: 95%;
+  justify-content: flex-end;
+  margin-top: 30px;
 }
 
 /* main-section */
