@@ -12,7 +12,7 @@ body {
 header {
   height: 70px;
   background-color: #3c3a39;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -26,7 +26,7 @@ main {
 /* Tool bar content */
 
 header .toolbar {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -238,52 +238,35 @@ ul {
   background-color: #ff6b00;
 }
 
+.multi-post-nav:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+}
+
 /* Professional-art section */
 
-.cards-container {
+.project-card {
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background-image: url('img/placebackgroung.png');
+  background-size: cover;
+  background-position: center;
+  height: 386px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-card img {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  height: auto;
+  margin-bottom: 10px;
+  display: none;
 }
 
-.profesional-art-container-2 {
-  position: relative;
-  background-image: url(img/placebackgroung.png);
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  justify-content: flex-end;
-  height: 386px;
-  background-size: cover;
-}
-
-.profesional-art-container-Data-Dashboard {
-  position: relative;
-  background-image: url(img/data.png);
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  justify-content: flex-end;
-  height: 386px;
-  background-size: cover;
-}
-
-.profesional-art-container-Website-Portfolio {
-  position: relative;
-  background-image: url(img/websiteportfolio.png);
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  justify-content: flex-end;
-  height: 386px;
-  background-size: cover;
-}
-
-.profesional-art-h2 {
+.project-card h3 {
   font-family: Crete Round, sans-serif;
   font-size: 32px;
   font-weight: 400;
@@ -294,7 +277,7 @@ ul {
   margin-left: 13px;
 }
 
-.profesional-art-p {
+.project-card p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -304,14 +287,32 @@ ul {
   margin-left: 13px;
 }
 
-.profesional-art-ul {
+.project-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
   display: flex;
   gap: 12px;
   margin-left: 13px;
 }
 
-.profesional-art-nav {
-  background-color: #ff6b00;
+.project-card li {
+  width: 80px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.24);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+  justify-content: center;
+}
+
+.project-card button {
   width: 100%;
   height: 48px;
   font-family: 'Inter', sans-serif;
@@ -322,6 +323,48 @@ ul {
   color: #fff;
   text-align: center;
   display: none;
+}
+
+.project-card:hover {
+  background-image: url(img/art1.png);
+}
+
+.project-card:hover button {
+  display: block;
+}
+
+.project-card:hover p {
+  display: none;
+}
+
+.project-card:hover ul {
+  display: none;
+}
+
+.project-card:hover h3 {
+  display: none;
+}
+
+.project-card button:enabled {
+  background-color: #ff6b00;
+  color: #f4f5f7;
+  border-color: #ff6b00;
+}
+
+.project-card button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+}
+
+.project-card button:checked {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.project-card button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border-color: #f4f1f0;
 }
 
 /* About me section */
@@ -375,6 +418,11 @@ ul {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
+}
+
+.getmyresume:hover {
+  background-color: #fff5e1;
+  color: #f55800;
 }
 
 .about-me-line {
@@ -534,23 +582,95 @@ ul {
   margin-bottom: 30px;
 }
 
-/* Buttons */
+/* Pop up window */
 
-button:enabled {
-  background-color: #ff6b00;
-  color: #f4f5f7;
-  border-color: #ff6b00;
+.pop-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
 }
 
-button:visited {
+.pop-close {
+  width: 30px;
+  height: 30px;
+}
+
+.pop-up-window {
+  display: flex;
+  justify-content: center;
   background-color: #e05304;
-  color: #f4f1f0;
 }
 
-button:disabled {
-  background-color: #f4f1f0;
-  color: #5b5957;
-  border-color: #f4f1f0;
+.pop-up-content {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  margin-right: 15px;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  z-index: 9999;
+  border: 1px solid #ebecf0;
+  overflow: hidden;
+}
+
+.mobileh3 {
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.deskh3 {
+  font-family: Crete Round, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  display: none;
+}
+
+.deskp {
+  display: none;
+}
+
+.pop-up-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.popbuttons {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.popbuttons:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+}
+
+.pop-box2 {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pop-box3 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 /* Desktop version */
@@ -648,93 +768,12 @@ button:disabled {
   }
 
   /* Professional art */
-  .cards-container {
-    flex-direction: row;
-    justify-content: center;
-    height: 448px;
-  }
 
-  .profesional-art-container-Data-Dashboard {
-    height: 448px;
-    width: 100%;
-  }
-
-  .profesional-art-container-Data-Dashboard:hover {
-    background-image: url(img/art1.png);
-    border: 1px solid black;
-
-    .profesional-art-ul {
-      opacity: 0;
-    }
-
-    .profesional-art-p {
-      opacity: 0;
-    }
-
-    .profesional-art-h2 {
-      opacity: 0;
-    }
-
-    .profesional-art-nav {
-      display: block;
-    }
-  }
-
-  .profesional-art-container-Website-Portfolio {
-    height: 448px;
-    width: 100%;
-  }
-
-  .profesional-art-container-Website-Portfolio:hover {
-    background-image: url(img/art1.png);
-    border: 1px solid black;
-
-    .profesional-art-ul {
-      opacity: 0;
-    }
-
-    .profesional-art-p {
-      opacity: 0;
-    }
-
-    .profesional-art-h2 {
-      opacity: 0;
-    }
-
-    .profesional-art-nav {
-      display: block;
-    }
-  }
-
-  .profesional-art-container {
-    height: 448px;
-    width: 100%;
-  }
-
-  .profesional-art-container-2 {
-    height: 448px;
-    width: 100%;
-  }
-
-  .profesional-art-container-2:hover {
-    background-image: url(img/art1.png);
-    border: 1px solid black;
-
-    .profesional-art-ul {
-      opacity: 0;
-    }
-
-    .profesional-art-p {
-      opacity: 0;
-    }
-
-    .profesional-art-h2 {
-      opacity: 0;
-    }
-
-    .profesional-art-nav {
-      display: block;
-    }
+  .project-card {
+    width: calc(33.33% - 40px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
   }
 
   /* About me */
@@ -803,5 +842,59 @@ button:disabled {
 
   .black-bar {
     display: none;
+  }
+
+  /* Pop up media */
+
+  .deskh3 {
+    display: block;
+  }
+
+  .mobileh3 {
+    display: none;
+  }
+
+  .pop-box {
+    margin-bottom: 0;
+  }
+
+  .pop-box2 {
+    flex-direction: row;
+    margin-bottom: 16px;
+  }
+
+  .pop-box3 {
+    gap: 20px;
+    align-items: flex-start;
+    width: 45%;
+    justify-content: flex-end;
+  }
+
+  .deskp {
+    display: block;
+  }
+
+  .pop-box3 p {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .popimage {
+    width: 55%;
+  }
+
+  .pop-up-content {
+    width: 80%;
+    height: 90%;
+  }
+
+  .popbuttons {
+    gap: 16px;
+    margin-top: 40px;
+    margin-bottom: 0;
   }
 }
