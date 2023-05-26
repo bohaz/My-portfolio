@@ -158,3 +158,20 @@ openModal.forEach((button) => {
     });
   });
 });
+
+/* --------------------Form Validation------------------------*/
+
+const form = document.querySelector('.form');
+const errorElement = document.querySelector('.error-message');
+form.addEventListener('submit', (event) => {
+  const emailInput = document.getElementById('mail');
+  const emailValue = emailInput.value;
+
+  if (emailValue !== emailValue.toLowerCase()) {
+    errorElement.textContent = 'Email must be in lowercase';
+    const submitButton = document.querySelector('.getintouch');
+    submitButton.parentNode.insertBefore(errorElement, submitButton);
+
+    event.preventDefault();
+  }
+});
