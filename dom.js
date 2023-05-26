@@ -73,7 +73,7 @@ const projects = [
   },
 ];
 
-/* ------------------Creating cards dinamically---------------------*/
+/* ------------------Creating cards dynamically---------------------*/
 
 const projectsContainer = document.querySelector('#projects-container');
 
