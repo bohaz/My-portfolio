@@ -73,7 +73,7 @@ const projects = [
   },
 ];
 
-/* ------------------Creating cards dinamically---------------------*/
+/* ------------------Creating cards dynamically---------------------*/
 
 const projectsContainer = document.querySelector('#projects-container');
 
@@ -159,6 +159,7 @@ openModal.forEach((button) => {
   });
 });
 
+
 /* --------------------Form Validation------------------------*/
 
 const form = document.querySelector('.form');
@@ -175,3 +176,4 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+=======
