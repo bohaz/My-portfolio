@@ -159,21 +159,50 @@ openModal.forEach((button) => {
   });
 });
 
-
 /* --------------------Form Validation------------------------*/
 
 const form = document.querySelector('.form');
 const errorElement = document.querySelector('.error-message');
-form.addEventListener('submit', (event) => {
-  const emailInput = document.getElementById('mail');
-  const emailValue = emailInput.value;
+const submitButton = document.querySelector('.getintouch');
 
-  if (emailValue !== emailValue.toLowerCase()) {
-    errorElement.textContent = 'Email must be in lowercase';
-    const submitButton = document.querySelector('.getintouch');
-    submitButton.parentNode.insertBefore(errorElement, submitButton);
-
-    event.preventDefault();
+window.addEventListener('load', () => {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+  if (formData) {
+    // eslint-disable-next-line no-use-before-define
+    populateFormFields(formData);
   }
 });
 
+form.addEventListener('input', () => {
+  // eslint-disable-next-line no-use-before-define
+  const formData = getFormData();
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+form.addEventListener('submit', (event) => {
+  // eslint-disable-next-line no-use-before-define
+  const formData = getFormData();
+
+  if (formData.email !== formData.email.toLowerCase()) {
+    errorElement.textContent = 'El correo electrónico debe estar en minúsculas';
+    submitButton.parentNode.insertBefore(errorElement, submitButton);
+
+    event.preventDefault();
+  } else {
+    errorElement.textContent = '';
+    localStorage.removeItem('formData');
+  }
+});
+
+function populateFormFields(formData) {
+  const emailInput = document.getElementById('mail');
+  emailInput.value = formData.email;
+}
+
+function getFormData() {
+  const emailInput = document.getElementById('mail');
+  const formData = {
+    email: emailInput.value,
+  };
+  return formData;
+}
