@@ -21,7 +21,6 @@ menuLinks.forEach((menulink) => {
 });
 
 /* ------------------Array--------------------*/
-// eslint-disable-next-line no-unused-vars
 const projects = [
   {
     name: 'Profesional Art Printing Data',
@@ -165,35 +164,6 @@ const form = document.querySelector('.form');
 const errorElement = document.querySelector('.error-message');
 const submitButton = document.querySelector('.getintouch');
 
-window.addEventListener('load', () => {
-  const formData = JSON.parse(localStorage.getItem('formData'));
-  if (formData) {
-    // eslint-disable-next-line no-use-before-define
-    populateFormFields(formData);
-  }
-});
-
-form.addEventListener('input', () => {
-  // eslint-disable-next-line no-use-before-define
-  const formData = getFormData();
-  localStorage.setItem('formData', JSON.stringify(formData));
-});
-
-form.addEventListener('submit', (event) => {
-  // eslint-disable-next-line no-use-before-define
-  const formData = getFormData();
-
-  if (formData.email !== formData.email.toLowerCase()) {
-    errorElement.textContent = 'El correo electrónico debe estar en minúsculas';
-    submitButton.parentNode.insertBefore(errorElement, submitButton);
-
-    event.preventDefault();
-  } else {
-    errorElement.textContent = '';
-    localStorage.removeItem('formData');
-  }
-});
-
 function populateFormFields(formData) {
   const emailInput = document.getElementById('mail');
   emailInput.value = formData.email;
@@ -206,3 +176,29 @@ function getFormData() {
   };
   return formData;
 }
+
+window.addEventListener('load', () => {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+  if (formData) {
+    populateFormFields(formData);
+  }
+});
+
+form.addEventListener('input', () => {
+  const formData = getFormData();
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+form.addEventListener('submit', (event) => {
+  const formData = getFormData();
+
+  if (formData.email !== formData.email.toLowerCase()) {
+    errorElement.textContent = 'El correo electrónico debe estar en minúsculas';
+    submitButton.parentNode.insertBefore(errorElement, submitButton);
+
+    event.preventDefault();
+  } else {
+    errorElement.textContent = '';
+    localStorage.removeItem('formData');
+  }
+});
