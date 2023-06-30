@@ -23,25 +23,25 @@ menuLinks.forEach((menulink) => {
 /* ------------------Array--------------------*/
 const projects = [
   {
-    name: 'Profesional Art Printing Data',
+    name: 'Leaderboard',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    image: 'img/placebackgroung.png',
+    image: 'img/mario.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    liveLink: 'https://bohaz.github.io/Leaderboard/dist/',
+    sourceLink: 'https://github.com/bohaz/First-mobile-project',
+  },
+  {
+    name: 'To-do-list',
+    description: 'This is a minimalist to-do list that alows users to organize daily activities.',
+    image: 'img/todo.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://bohaz.github.io/First-mobile-project/',
     sourceLink: 'https://github.com/bohaz/First-mobile-project',
   },
   {
-    name: 'Data Dashboard Healthcare',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    image: 'img/data.png',
-    technologies: ['HTML', 'Bootstrap', 'Ruby'],
-    liveLink: 'https://bohaz.github.io/First-mobile-project/',
-    sourceLink: 'https://github.com/bohaz/First-mobile-project',
-  },
-  {
-    name: 'Website Portfolio',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    image: 'img/websiteportfolio.png',
+    name: 'Rodeo web page',
+    description: 'The Finals Rodeo website is a final project created with HTML, CSS and Javascript where we apply all the knowledge acquired during module 1',
+    image: 'img/rodeo.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://bohaz.github.io/First-mobile-project/',
     sourceLink: 'https://github.com/bohaz/First-mobile-project',
@@ -80,10 +80,10 @@ projects.forEach((project) => {
   const projectCard = document.createElement('div');
   projectCard.classList.add('project-card');
 
-  const projectImage = document.createElement('img');
-  projectImage.src = project.image;
-  projectImage.alt = project.name;
-  projectCard.appendChild(projectImage);
+  const projectImageContainer = document.createElement('div');
+  projectImageContainer.classList.add('project-card-image');
+  projectImageContainer.style.backgroundImage = `url(${project.image})`;
+  projectCard.appendChild(projectImageContainer);
 
   const projectName = document.createElement('h3');
   projectName.textContent = project.name;
