@@ -70,7 +70,7 @@ HTML5, CSS3, Flexbox, Git and Github
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://bohaz.github.io/First-mobile-project/)
+- [Live Demo Link](https://bohaz.github.io/My-potfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
