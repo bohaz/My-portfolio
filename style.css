@@ -249,7 +249,7 @@ ul {
   background-color: #f5f5f5;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  background-image: url('img/placebackgroung.png');
+  background-image: url(img/placebackgroung.png);
   background-size: cover;
   background-position: center;
   height: 386px;
@@ -259,11 +259,44 @@ ul {
   gap: 12px;
 }
 
-.project-card img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  display: none;
+.project-card:hover {
+  background-image: url(img/art1.png);
+}
+
+.project-card:nth-child(1):hover {
+  background-image: url("img/mario.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-card:nth-child(2):hover {
+  background-image: url("img/todo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-card:nth-child(3):hover {
+  background-image: url("img/rodeo2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-card:nth-child(4):hover {
+  background-image: url("img/Booklist.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-card:nth-child(5):hover {
+  background-image: url("img/Math.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-card:nth-child(6):hover {
+  background-image: url("img/Airapp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .project-card h3 {
@@ -323,10 +356,6 @@ ul {
   color: #fff;
   text-align: center;
   display: none;
-}
-
-.project-card:hover {
-  background-image: url(img/art1.png);
 }
 
 .project-card:hover button {

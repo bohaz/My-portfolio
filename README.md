@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  <h3><b>My first Mobile project</b></h3>
+  <h3><b>My portfolio</b></h3>
 
 </div>
 
@@ -31,10 +31,10 @@
 - [📝 License](#license)
 
 
-# 📖 [My first Mobile project] <a name="about-project"></a>
+# 📖 [My portfolio] <a name="about-project"></a>
 
 
-**[My first Mobile project]** Is a personal portfolio made made from scratch using Html, Css and Flexbox.
+**My portfolio** Is a personal portfolio made made from scratch using Html, Css and Flexbox.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -70,7 +70,7 @@ HTML5, CSS3, Flexbox, Git and Github
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://bohaz.github.io/First-mobile-project/)
+- [Live Demo Link](https://bohaz.github.io/My-potfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
