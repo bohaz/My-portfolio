@@ -281,6 +281,24 @@ ul {
   background-repeat: no-repeat;
 }
 
+.project-card:nth-child(4):hover {
+  background-image: url("img/Booklist.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-card:nth-child(5):hover {
+  background-image: url("img/Math.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-card:nth-child(6):hover {
+  background-image: url("img/Airapp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .project-card h3 {
   font-family: Crete Round, sans-serif;
   font-size: 32px;
