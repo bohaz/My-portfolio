@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  <h3><b>My portfolio</b></h3>
+  <h3><b>💼 My portfolio</b></h3>
 
 </div>
 
@@ -31,7 +31,7 @@
 - [📝 License](#license)
 
 
-# 📖 [My portfolio] <a name="about-project"></a>
+# 📖 My portfolio <a name="about-project"></a>
 
 
 **My portfolio** Is a personal portfolio made made from scratch using Html, Css and Flexbox.
@@ -62,15 +62,15 @@ HTML5, CSS3, Flexbox, Git and Github
 ### Key Features <a name="key-features"></a>
 
 
-- **[Best organization]**
-- **[Professional documentation]**
-- **[Clean Working]**
+- **Best organization**
+- **Professional documentation**
+- **Clean Working**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://bohaz.github.io/My-potfolio/)
+- [Live Demo Link](https://bohaz.github.io/My-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,15 +92,17 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-cd my-folder
-git clone git@github.com:bohaz/Hello-.git
+```sh
+  cd my-folder
+  git clone git@github.com:bohaz/My-portfolio.git
+```
 
 ### Install
 
 
 To install all dependencies, run:
 
-npm install
+```npm install```
 
 ### Usage
 
@@ -114,17 +116,17 @@ To run tests, run the following commands:
 
 -HTML linter errors run:
 
-npx hint .
+```npx hint .```
 
 -CSS linter errors run:
 
-npx stylelint "**/*.{css,scss}"
+```npx stylelint "**/*.{css,scss}"```
 
 ### Deployment
 
 You can deploy this project using:
 
--Github
+-Github pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,9 +136,9 @@ You can deploy this project using:
 
 👤 **Author1**
 
-- GitHub: [@bohaz](https://github.com/githubhandle)
-- Twitter: [@Ricardo29115571](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@bohaz](https://github.com/bohaz)
+- Twitter: [@Ricardo29115571](https://twitter.com/Ricardo29115571)
+- LinkedIn: [Ricardo Martinez](https://www.linkedin.com/in/ricardomart%C3%ADnez%E2%88%B4/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -145,8 +147,8 @@ You can deploy this project using:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Functionality]**
-- [ ] **[Content]**
+- [ ] **Functionality**
+- [ ] **Content**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
