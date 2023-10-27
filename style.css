@@ -226,6 +226,15 @@ ul {
   display: flex;
 }
 
+.multi-post-ul li,
+.pop-up-ul li {
+  display: inline-block; 
+  padding: 5px 10px; 
+  border: 2px solid #333; 
+  margin: 5px; 
+  background-color: #f5f5f5; 
+}
+
 .multi-post-nav {
   width: 124px;
   height: 48px;
