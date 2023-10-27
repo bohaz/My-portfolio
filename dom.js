@@ -24,9 +24,9 @@ menuLinks.forEach((menulink) => {
 const projects = [
   {
     name: 'Leaderboard',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    description: 'Leaderboard Is a personal priject that alows users to add and remove scores!',
     image: 'img/projects/mario.png',
-    technologies: ['HTML', 'Javascript', 'Ruby'],
+    technologies: ['HTML', 'Javascript', 'CSS3'],
     liveLink: 'https://bohaz.github.io/Leaderboard/dist/',
     sourceLink: 'https://github.com/bohaz/First-mobile-project',
   },
