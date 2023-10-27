@@ -264,37 +264,37 @@ ul {
 }
 
 .project-card:nth-child(1):hover {
-  background-image: url("img/mario.png");
+  background-image: url("img/projects/mario.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(2):hover {
-  background-image: url("img/todo.png");
+  background-image: url("img/projects/Todo1.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(3):hover {
-  background-image: url("img/rodeo2.png");
+  background-image: url("img/projects/rodeo2.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(4):hover {
-  background-image: url("img/Booklist.png");
+  background-image: url("img/projects/Trans3.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(5):hover {
-  background-image: url("img/Math.png");
+  background-image: url("img/projects/Math2.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(6):hover {
-  background-image: url("img/Airapp.png");
+  background-image: url("img/projects/Airapp.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
