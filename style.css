@@ -222,7 +222,6 @@ ul {
 }
 
 .multi-post-ul {
-  gap: 12px;
   display: flex;
 }
 
@@ -665,7 +664,7 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
-  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 60px 100px rgba(37, 47, 137, 0.5);
   z-index: 9999;
   border: 1px solid #ebecf0;
   overflow: hidden;
