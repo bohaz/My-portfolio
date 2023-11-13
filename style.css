@@ -187,11 +187,13 @@ ul {
 }
 
 .placeholder {
-  max-width: 320px;
+  max-width: 325px;
+  border-radius: 5px;
 }
 
 .placeholder-2 {
   display: none;
+  border-radius: 5px;
 }
 
 .works-box2 {
@@ -226,6 +228,7 @@ ul {
   display: inline-block;
   padding: 5px 10px;
   border: 2px solid #333;
+  border-radius: 5px;
   margin: 5px;
   background-color: #f5f5f5;
 }
@@ -240,11 +243,14 @@ ul {
   line-height: 24px;
   color: #fff;
   background-color: #ff6b00;
+  border-radius: 5px;
+  border: none;
 }
 
 .multi-post-nav:hover {
   background-color: #fff5e1;
   color: #f55800;
+  border: 2px solid #f55800;
 }
 
 /* Professional-art section */
@@ -261,10 +267,7 @@ ul {
   justify-content: flex-end;
   flex-direction: column;
   gap: 12px;
-}
-
-.project-card:hover {
-  background-image: url(img/art1.png);
+  border-radius: 5px;
 }
 
 .project-card:nth-child(1):hover {
@@ -347,13 +350,21 @@ ul {
   line-height: 20px;
   color: white;
   justify-content: center;
+  border-radius: 5px;
 }
 
 .desktop-bar li:hover,
 .social li:hover,
-.contact-section-media li:hover {
+.contact-section-media li:hover,
+.placeholder-2:hover,
+.project-card:nth-child(1):hover,
+.project-card:nth-child(2):hover,
+.project-card:nth-child(3):hover,
+.project-card:nth-child(4):hover,
+.project-card:nth-child(5):hover,
+.project-card:nth-child(6):hover {
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -368,6 +379,8 @@ ul {
   color: #fff;
   text-align: center;
   display: none;
+  border-radius: 5px;
+  border: none;
 }
 
 .project-card:hover button {
@@ -395,6 +408,7 @@ ul {
 .project-card button:hover {
   background-color: #fff5e1;
   color: #f55800;
+  border: 2px solid #f55800;
 }
 
 .project-card button:checked {
@@ -459,11 +473,8 @@ ul {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-}
-
-.getmyresume:hover {
-  background-color: #fff5e1;
-  color: #f55800;
+  border-radius: 5px;
+  border: none;
 }
 
 .about-me-line {
@@ -616,6 +627,15 @@ ul {
   color: #fff;
   width: 131px;
   height: 48px;
+  border-radius: 5px;
+  border: none;
+}
+
+.getmyresume:hover,
+.getintouch:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 2px solid #f55800;
 }
 
 .footer {
