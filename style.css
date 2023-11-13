@@ -33,7 +33,6 @@ header .toolbar {
   align-items: center;
   left: 30px;
   right: 30px;
-
 }
 
 .logo {
@@ -144,12 +143,6 @@ header .toolbar .desktop-bar {
 
 li {
   list-style: none;
-}
-
-.desktop-bar li:hover, .social li:hover, .contact-section-media li:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-  transition: transform 0.3s ease-in-out;
 }
 
 ul {
@@ -350,6 +343,14 @@ ul {
   line-height: 20px;
   color: white;
   justify-content: center;
+}
+
+.desktop-bar li:hover,
+.social li:hover,
+.contact-section-media li:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
 }
 
 .project-card button {
