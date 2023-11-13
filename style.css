@@ -187,7 +187,7 @@ ul {
 }
 
 .placeholder {
-  width: 100%;
+  max-width: 320px;
 }
 
 .placeholder-2 {
