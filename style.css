@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  height: 70px;
+  height: 95px;
   background-color: #3c3a39;
   position: absolute;
   top: 0;
@@ -31,21 +31,14 @@ header .toolbar {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  top: 20px;
   left: 30px;
   right: 30px;
+
 }
 
-header .toolbar .my-logo {
-  width: 100%;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  text-decoration: none;
-  list-style: none;
+.logo {
+  width: 30%;
+  height: 30%;
 }
 
 header .toolbar .bars {
@@ -151,6 +144,12 @@ header .toolbar .desktop-bar {
 
 li {
   list-style: none;
+}
+
+.desktop-bar li:hover, .social li:hover, .contact-section-media li:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
 }
 
 ul {
@@ -740,6 +739,11 @@ ul {
 
   header .toolbar .my-logo {
     margin-left: 100px;
+  }
+
+  .logo {
+    width: 10%;
+    height: 10%;
   }
 
   header .toolbar .desktop-bar {
