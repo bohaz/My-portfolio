@@ -186,6 +186,10 @@ ul {
   margin-bottom: 50px;
 }
 
+.placeholder {
+  width: 100%;
+}
+
 .placeholder-2 {
   display: none;
 }
