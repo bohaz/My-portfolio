@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  height: 70px;
+  height: 95px;
   background-color: #3c3a39;
   position: absolute;
   top: 0;
@@ -31,21 +31,13 @@ header .toolbar {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  top: 20px;
   left: 30px;
   right: 30px;
 }
 
-header .toolbar .my-logo {
-  width: 100%;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  text-decoration: none;
-  list-style: none;
+.logo {
+  width: 50%;
+  height: 50%;
 }
 
 header .toolbar .bars {
@@ -194,8 +186,14 @@ ul {
   margin-bottom: 50px;
 }
 
+.placeholder {
+  max-width: 325px;
+  border-radius: 5px;
+}
+
 .placeholder-2 {
   display: none;
+  border-radius: 5px;
 }
 
 .works-box2 {
@@ -222,8 +220,17 @@ ul {
 }
 
 .multi-post-ul {
-  gap: 12px;
   display: flex;
+}
+
+.multi-post-ul li,
+.pop-up-ul li {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #f5f5f5;
 }
 
 .multi-post-nav {
@@ -236,11 +243,14 @@ ul {
   line-height: 24px;
   color: #fff;
   background-color: #ff6b00;
+  border-radius: 5px;
+  border: none;
 }
 
 .multi-post-nav:hover {
   background-color: #fff5e1;
   color: #f55800;
+  border: 2px solid #f55800;
 }
 
 /* Professional-art section */
@@ -257,44 +267,41 @@ ul {
   justify-content: flex-end;
   flex-direction: column;
   gap: 12px;
-}
-
-.project-card:hover {
-  background-image: url(img/art1.png);
+  border-radius: 5px;
 }
 
 .project-card:nth-child(1):hover {
-  background-image: url("img/mario.png");
+  background-image: url("img/projects/Petfashion.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(2):hover {
-  background-image: url("img/todo.png");
+  background-image: url("img/projects/Medica.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(3):hover {
-  background-image: url("img/rodeo2.png");
+  background-image: url("img/projects/Trend.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(4):hover {
-  background-image: url("img/Booklist.png");
+  background-image: url("img/projects/Space.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(5):hover {
-  background-image: url("img/Math.png");
+  background-image: url("img/projects/Airapp.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(6):hover {
-  background-image: url("img/Airapp.png");
+  background-image: url("img/projects/Movie.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -343,6 +350,22 @@ ul {
   line-height: 20px;
   color: white;
   justify-content: center;
+  border-radius: 5px;
+}
+
+.desktop-bar li:hover,
+.social li:hover,
+.contact-section-media li:hover,
+.placeholder-2:hover,
+.project-card:nth-child(1):hover,
+.project-card:nth-child(2):hover,
+.project-card:nth-child(3):hover,
+.project-card:nth-child(4):hover,
+.project-card:nth-child(5):hover,
+.project-card:nth-child(6):hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: transform 0.3s ease-in-out;
 }
 
 .project-card button {
@@ -356,6 +379,8 @@ ul {
   color: #fff;
   text-align: center;
   display: none;
+  border-radius: 5px;
+  border: none;
 }
 
 .project-card:hover button {
@@ -383,6 +408,7 @@ ul {
 .project-card button:hover {
   background-color: #fff5e1;
   color: #f55800;
+  border: 2px solid #f55800;
 }
 
 .project-card button:checked {
@@ -447,11 +473,8 @@ ul {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-}
-
-.getmyresume:hover {
-  background-color: #fff5e1;
-  color: #f55800;
+  border-radius: 5px;
+  border: none;
 }
 
 .about-me-line {
@@ -604,6 +627,15 @@ ul {
   color: #fff;
   width: 131px;
   height: 48px;
+  border-radius: 5px;
+  border: none;
+}
+
+.getmyresume:hover,
+.getintouch:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 2px solid #f55800;
 }
 
 .footer {
@@ -656,7 +688,7 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
-  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 60px 100px rgba(37, 47, 137, 0.5);
   z-index: 9999;
   border: 1px solid #ebecf0;
   overflow: hidden;
@@ -716,6 +748,13 @@ ul {
   gap: 14px;
 }
 
+.popimage {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 /* Desktop version */
 
 @media only screen and (min-width: 768px) {
@@ -725,6 +764,11 @@ ul {
 
   header .toolbar .my-logo {
     margin-left: 100px;
+  }
+
+  .logo {
+    width: 60%;
+    height: 60%;
   }
 
   header .toolbar .desktop-bar {

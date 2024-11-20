@@ -23,52 +23,52 @@ menuLinks.forEach((menulink) => {
 /* ------------------Array--------------------*/
 const projects = [
   {
-    name: 'Leaderboard',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    image: 'img/mario.png',
-    technologies: ['HTML', 'Bootstrap', 'Ruby'],
-    liveLink: 'https://bohaz.github.io/Leaderboard/dist/',
-    sourceLink: 'https://github.com/bohaz/First-mobile-project',
+    name: 'Pet Fashion',
+    description: 'This is a simple website that provides online visibility for our business. Its sleek, user-friendly design ensures effortless navigation, improving customer engagement and accessibility',
+    image: 'img/projects/Petfashion.png',
+    technologies: ['React', 'Tailwind', 'CSS3'],
+    liveLink: 'https://petfashion.vercel.app/',
+    sourceLink: 'https://github.com/bohaz/petfashion',
   },
   {
-    name: 'To-do-list',
-    description: 'This is a minimalist to-do list that alows users to organize daily activities.',
-    image: 'img/todo.png',
-    technologies: ['HTML', 'Bootstrap', 'Ruby'],
-    liveLink: 'https://bohaz.github.io/First-mobile-project/',
-    sourceLink: 'https://github.com/bohaz/First-mobile-project',
+    name: 'Medica',
+    description: 'Is a dynamic web application for managing doctor directories and bookings. It offers an easy-to-use interface to seamlessly view, add, update and delete medical records',
+    image: 'img/projects/Medica.png',
+    technologies: ['React', 'Rails', 'Redux', 'Tailwind'],
+    liveLink: 'https://two4hours-doctor-frontend.onrender.com/',
+    sourceLink: 'https://github.com/bohaz/24hour_doctor-front_end',
   },
   {
-    name: 'Rodeo web page',
-    description: 'The Finals Rodeo website is a final project created with HTML, CSS and Javascript where we apply all the knowledge acquired during module 1',
-    image: 'img/rodeo.png',
-    technologies: ['HTML', 'Bootstrap', 'Ruby'],
-    liveLink: 'https://bohaz.github.io/First-mobile-project/',
-    sourceLink: 'https://github.com/bohaz/First-mobile-project',
+    name: 'Transac Trends',
+    description: 'TransactTrends is a web application designed to help you manage and keep a detailed track of your financial transactions',
+    image: 'img/projects/Trend.png',
+    technologies: ['Ruby', 'Rails', 'CSS3'],
+    liveLink: '',
+    sourceLink: 'https://github.com/bohaz/Budget-app',
   },
   {
-    name: 'Book-list',
-    description: 'Book-list is a Single Page Application that allows users to add and remove amazing books.',
-    image: 'img/Booklist.png',
+    name: 'Space Travelers Hub',
+    description: 'Web Page connected with the real live data from the SpaceX API, to provide commercial and scientific space travel services, users can book rockets and join selected space missions.',
+    image: 'img/projects/Space.png',
     technologies: ['React', 'Redux', 'Bootstrap'],
-    liveLink: 'https://bohaz.github.io/First-mobile-project/',
-    sourceLink: 'https://github.com/bohaz/First-mobile-project',
+    liveLink: 'https://space-travelers-hub-g5v6.onrender.com',
+    sourceLink: 'https://github.com/bohaz/Space-Travelers-Hub',
   },
   {
-    name: 'Math-magicians',
-    description: 'It is a Single Page Application that allows users to make simple math operations.',
-    image: 'img/Math.png',
-    technologies: ['React', 'Redux', 'CSS'],
-    liveLink: 'https://bohaz.github.io/First-mobile-project/',
-    sourceLink: 'https://github.com/bohaz/First-mobile-project',
-  },
-  {
-    name: 'Air quality monitoring app',
+    name: 'Air Quality Monitoring App',
     description: 'Air Quality Monitoring App is an intuitive single Page Application (SPA) displaying real-time air pollution levels across Venezuelan states.',
-    image: 'img/Airapp.png',
-    technologies: ['React', 'Redux', 'CSS'],
-    liveLink: 'https://bohaz.github.io/First-mobile-project/',
-    sourceLink: 'https://github.com/bohaz/First-mobile-project',
+    image: 'img/projects/Airapp.png',
+    technologies: ['React', 'Javascript', 'CSS3'],
+    liveLink: 'https://air-quality-monitoring-app.onrender.com/',
+    sourceLink: 'https://github.com/bohaz/air-quality-monitoring-app',
+  },
+  {
+    name: 'Movie World',
+    description: 'MovieWorld is an application that renders Tv Shows from TVMaze API and also has features like fetching and posting comments and Likes using the Involvment API. This is a collaborative project where we have applied all the skills obtained throughout the javascript module.',
+    image: 'img/projects/Movie.png',
+    technologies: ['Javascript', 'HTML5', 'CSS3'],
+    liveLink: 'https://java-script-capstone-navy.vercel.app/',
+    sourceLink: 'https://github.com/bohaz/JavaScript-Capstone',
   },
 ];
 
@@ -103,6 +103,7 @@ projects.forEach((project) => {
 
   const viewDetailsButton = document.createElement('button');
   viewDetailsButton.textContent = 'See project';
+  viewDetailsButton.setAttribute('data-index', projects.indexOf(project));
   projectCard.appendChild(viewDetailsButton);
 
   projectsContainer.appendChild(projectCard);
@@ -113,40 +114,32 @@ const body = document.querySelector('body');
 const openModal = document.querySelectorAll('.project-card button, .multi-post-nav');
 openModal.forEach((button) => {
   button.addEventListener('click', () => {
+    const projectIndex = button.getAttribute('data-index');
+    const project = projects[projectIndex];
     const popSection = document.createElement('div');
     const popUp = document.createElement('div');
     popUp.innerHTML = `
-  <div class="pop-up-content" id="pop-up-container">
-    
-  <div class="pop-box">
-   <h3 class="mobileh3">Multi Post Stories</h3>
-   <h3 class="deskh3">Keeping track of hundreds  of components website</h3>
-   <a class="pop-close"><img src="img/popclose.png"></a>
-  </div>
-   
-  <ul class="pop-up-ul">
-     <li><img src="img/pophtml.png"></li>
-     <li><img src="img/popboots.png"></li>
-     <li><img src="img/popruby.png"></li>
-  </ul>
-  
-  <div class="pop-box2">
-   
-    <img class="popimage" src="img/popimage.png" alt="popimg">
-  
-    <div class="pop-box3">
-      <p class="deskp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
-      <div class="popbuttons">
-      <a href="https://bohaz.github.io/First-mobile-project/" target="_blank"><button><img src="img/seelive.png"></button></a>
-      <a href="https://github.com/bohaz/First-mobile-project" target="_blank"><button><img src="img/seesource.png"></button></a>
+      <div class="pop-up-content" id="pop-up-container">
+        <div class="pop-box">
+          <h3 class="mobileh3">${project.name}</h3>
+          <h3 class="deskh3">${project.description}</h3>
+          <a class="pop-close"><img src="img/popclose.png"></a>
+        </div>
+        <ul class="pop-up-ul">
+          ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
+        </ul>
+        <div class="pop-box2">
+          <img class="popimage" src="${project.image}" alt="${project.name}">
+          <div class="pop-box3">
+            <p class="deskp">${project.description}</p>
+            <div class="popbuttons">
+              <a href="${project.liveLink}" target="_blank"><button><img src="img/seelive.png"></button></a>
+              <a href="${project.sourceLink}" target="_blank"><button><img src="img/seesource.png"></button></a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-</div>
-
-  `;
+    `;
 
     popSection.appendChild(popUp);
     body.appendChild(popSection);
