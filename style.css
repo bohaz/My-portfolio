@@ -36,8 +36,8 @@ header .toolbar {
 }
 
 .logo {
-  width: 30%;
-  height: 30%;
+  width: 50%;
+  height: 50%;
 }
 
 header .toolbar .bars {
@@ -271,37 +271,37 @@ ul {
 }
 
 .project-card:nth-child(1):hover {
-  background-image: url("img/projects/Transfront.png");
+  background-image: url("img/projects/Petfashion.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(2):hover {
-  background-image: url("img/projects/Airapp.png");
+  background-image: url("img/projects/Medica.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(3):hover {
-  background-image: url("img/projects/Todo1.png");
+  background-image: url("img/projects/Trend.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(4):hover {
-  background-image: url("img/projects/mario.png");
+  background-image: url("img/projects/Space.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(5):hover {
-  background-image: url("img/projects/rodeo2.png");
+  background-image: url("img/projects/Airapp.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-card:nth-child(6):hover {
-  background-image: url("img/projects/");
+  background-image: url("img/projects/Movie.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -364,7 +364,7 @@ ul {
 .project-card:nth-child(5):hover,
 .project-card:nth-child(6):hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.01);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -767,8 +767,8 @@ ul {
   }
 
   .logo {
-    width: 10%;
-    height: 10%;
+    width: 60%;
+    height: 60%;
   }
 
   header .toolbar .desktop-bar {
