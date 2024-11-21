@@ -337,7 +337,7 @@ ul {
 }
 
 .project-card li {
-  width: 80px;
+  width: 80%;
   height: 40px;
   background: rgba(255, 255, 255, 0.24);
   display: flex;
