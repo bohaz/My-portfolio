@@ -10,10 +10,9 @@ body {
 }
 
 header {
-  height: 95px;
+  height: 75px;
   background-color: #3c3a39;
-  position: absolute;
-  top: 0;
+  position: fixed;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -337,8 +336,7 @@ ul {
 }
 
 .project-card li {
-  width: 80%;
-  height: 40px;
+  padding: 5px 10px;
   background: rgba(255, 255, 255, 0.24);
   display: flex;
   flex-direction: row;
