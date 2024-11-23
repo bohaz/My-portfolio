@@ -34,11 +34,11 @@
 # 📖 My portfolio <a name="about-project"></a>
 
 
-**My portfolio** Is a personal portfolio made made from scratch using Html, Css and Flexbox.
+**My portfolio** Is a personal portfolio made made from scratch using HTML5, CSS3 and Javascript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-HTML5, CSS3, Flexbox, Git and Github
+HTML5, CSS3, Javascript, Git and Github
 
 ### Tech Stack <a name="tech-stack"></a>
 
