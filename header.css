@@ -4,7 +4,7 @@ header {
   position: fixed;
   right: 0;
   left: 0;
-  padding: 3% 4%;
+  padding: 3% 4% 3% 4%;
 }
 
 .logo {
@@ -82,7 +82,7 @@ header {
 
   header {
     height: 72px;
-    padding: 1% 9%;
+    padding: 1% 9% 1% 9%;
   }
 
   .bars {
