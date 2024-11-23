@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto&display=swap" rel="stylesheet">
@@ -26,33 +27,32 @@
   <!-----------------Header section--------------------------------->
 
   <header>
-    <div class="toolbar">
-      <a class="my-logo" href="index.html"><img class="logo" src="img/Ricardo.png" alt="mylogo"/></a>
+    <div class="header-container">
+      <img class="logo" src="img/Ricardo.png" alt="mylogo"/>
       <nav>
-        <a class="bars" id="open"><img src="img/Union.png" alt="bars"/></a>
-      </nav>   
-
-      <nav>
-        <ul class="desktop-bar">
-          <li><a href="#portfolio"><img src="img/portfolio.png" alt=""/></a></li>
-          <li><a href="#about"><img src="img/abaut.png" alt=""/></a></li>
-          <li><a href="#contact"><img src="img/contact.png" alt=""/></a></li>
-          <li><a href="index.html"><img src="img/Disabled.png" alt="bars"/></a></li>
+        <a id="open"><img src="img/icons/menu.svg" alt="bars" class="bars"/></a>
+      </nav>  
+      <nav class="desktop-bar">
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#"><img src="img/icons/Mail.svg" alt=""></a></li>
         </ul>
       </nav>
+    </div>
 
     <!-----------------------Mobile menu----------------------------------->
 
-      <nav class="mobile-menu" id="nav">
+    <nav class="mobile-menu" id="nav">
         <a class="close-button" id="close"><img src="img/closebotton.png"></a>
         <ul class="mobile-ul">
           <li><a href="#portfolio"><img src="img/portfolio-mobile.png" alt="bars"/></a></li>
           <li><a href="#about"><img src="img/about-mobile.png" alt="bars"/></a></li>
           <li><a href="#contact"><img src="img/contact-mobile.png" alt="bars"/></a></li>
         </ul>
-      </nav>
-
-    </div>
+    </nav>
+   
   </header>
 
   <main>
