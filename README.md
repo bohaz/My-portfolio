@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  <h3><b>💼 My portfolio</b></h3>
+  <img class="logo" src="img/Ricardo.png" alt="mylogo">
 
 </div>
 
