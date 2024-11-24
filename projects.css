@@ -203,7 +203,8 @@
   justify-content: center;
 }
 
-.main-project-box:hover, .desktop-bar li:hover,
+.main-project-box:hover,
+.desktop-bar li:hover,
 .social li:hover,
 .contact-section-media li:hover,
 .placeholder-2:hover,

@@ -13,9 +13,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  backdrop-filter: blur(8px); 
-  z-index: 9998; 
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 9998;
 }
 
 .pop-close {
@@ -47,7 +47,7 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 40px;
-  color: #172B4D;
+  color: #172b4d;
   text-align: left;
   margin-bottom: 10px;
 }
@@ -74,7 +74,7 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-  color: #3C3A39;
+  color: #3c3a39;
   font-family: Popins, sans-serif;
   font-weight: 600;
   font-size: 13px;
@@ -85,10 +85,10 @@
   display: inline-block;
   padding: 5px 10px 5px 10px;
   border: 1px solid #979493;
-  
 }
 
-.live-button, .source-button {
+.live-button,
+.source-button {
   background-color: #f55800;
   color: white;
   border: none;
@@ -106,7 +106,8 @@
   flex-direction: row;
 }
 
-.live-button:hover, .source-button:hover {
+.live-button:hover,
+.source-button:hover {
   background-color: #fff5e1;
   color: #f55800;
   border: 2px solid #f55800;
