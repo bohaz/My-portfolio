@@ -23,6 +23,14 @@ menuLinks.forEach((menulink) => {
 /* ------------------Array--------------------*/
 const projects = [
   {
+    name: 'Finan-Pet',
+    description: 'Finanpet is a finance management application built on Ruby on Rails, leveraging Stimulus.js and Tailwind CSS for a responsive UI. This project allows users to efficiently track their incomes and expenses, featuring a relational database schema to ensure data integrity.',
+    technologies: ['Ruby', 'Rails', 'Tailwind', 'Postgres'],
+    image: 'img/projects/Finanpet.png',
+    liveLink: '#',
+    sourceLink: '#',
+  },
+  {
     name: 'Pet Fashion',
     description: 'This is a simple website that provides online visibility for our business. Its sleek, user-friendly design ensures effortless navigation, improving customer engagement and accessibility',
     image: 'img/projects/Petfashion.png',
@@ -76,7 +84,7 @@ const projects = [
 
 const projectsContainer = document.querySelector('#projects-container');
 
-projects.forEach((project) => {
+projects.slice(1).forEach((project, index) => {
   const projectCard = document.createElement('div');
   projectCard.classList.add('project-card');
 
@@ -103,7 +111,7 @@ projects.forEach((project) => {
 
   const viewDetailsButton = document.createElement('button');
   viewDetailsButton.textContent = 'See project';
-  viewDetailsButton.setAttribute('data-index', projects.indexOf(project));
+  viewDetailsButton.setAttribute('data-index', index + 1);
   projectCard.appendChild(viewDetailsButton);
 
   projectsContainer.appendChild(projectCard);
@@ -111,13 +119,20 @@ projects.forEach((project) => {
 
 /* --------------------Modal pop up----------------*/
 const body = document.querySelector('body');
-const openModal = document.querySelectorAll('.project-card button, .multi-post-nav');
+const openModal = document.querySelectorAll('.project-card button, .main-project-container button');
+
 openModal.forEach((button) => {
   button.addEventListener('click', () => {
     const projectIndex = button.getAttribute('data-index');
     const project = projects[projectIndex];
+
+    const modalBackground = document.createElement('div');
+    modalBackground.classList.add('modal-background');
+    body.appendChild(modalBackground);
+
     const popSection = document.createElement('div');
     const popUp = document.createElement('div');
+    popUp.classList.add('pop-up-content');
     popUp.innerHTML = `
       <div class="pop-up-content" id="pop-up-container">
         <div class="pop-box">
@@ -133,8 +148,8 @@ openModal.forEach((button) => {
           <div class="pop-box3">
             <p class="deskp">${project.description}</p>
             <div class="popbuttons">
-              <a href="${project.liveLink}" target="_blank"><button><img src="img/seelive.png"></button></a>
-              <a href="${project.sourceLink}" target="_blank"><button><img src="img/seesource.png"></button></a>
+              <a href="${project.liveLink}" target="_blank"><button class="live-button">See Live <img src="img/icons/live.svg"></button></a>
+              <a href="${project.sourceLink}" target="_blank"><button class="source-button">See source <img src="img/icons/github.svg"></button></a>
             </div>
           </div>
         </div>
@@ -147,6 +162,7 @@ openModal.forEach((button) => {
     const popCloseButton = popSection.querySelector('.pop-close');
     popCloseButton.addEventListener('click', () => {
       popSection.remove();
+      modalBackground.remove();
     });
   });
 });
