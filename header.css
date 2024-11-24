@@ -81,11 +81,15 @@ header {
   }
 
   header {
-    height: 72px;
     padding: 1% 9% 1% 9%;
   }
 
   .bars {
     display: none;
+  }
+
+  .logo {
+    width: 15%;
+    height: 15%;
   }
 }
