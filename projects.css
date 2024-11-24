@@ -1,5 +1,12 @@
+.main-works-section {
+  background-color: #fff;
+  display: grid;
+  
+}
+
 .main-project-container {
-  padding: 120px 24px 120px 24px;
+  padding: 24px 24px;
+  padding-top: 120px;
   background-color: #fff;
 }
 
@@ -12,18 +19,17 @@
   margin-bottom: 20px;
 }
 
-.main-project-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.main-prject-title {
+.project-title {
   font-family: "Crete Round", serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
   color: #091E42;
+}
+
+.main-project-image {
+  width: 100%;
+  height: 100%;
 }
 
 .main-project-p {
@@ -45,8 +51,10 @@
 
 .main-project-techs li {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 10px;
   border: 1px solid #091E42;
+  margin-bottom: 9px;
+  margin-right: 5px;
 }
 
 .main-project-button {
@@ -62,5 +70,263 @@
   border: none;
 }
 
+.main-project-button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 2px solid #f55800;
+}
 
+.main-project-button:checked {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
 
+.main-project-button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border-color: #f4f1f0;
+}
+
+.custom-line {
+  width: 327px;           
+  height: 0;              
+  border-top: 1px solid #212121; 
+  opacity: 1;             
+  margin-top: 40px;  
+  margin-bottom: 80px;     
+}
+
+.main-project-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Projects section */
+
+.projects-container {
+  padding: 24px 24px;
+  padding-bottom: 120px;
+  background-color: #fff;
+}
+
+.project-card {
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background-image: url(img/placebackgroung.png);
+  background-size: cover;
+  background-position: center;
+  height: 386px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-card:nth-child(1):hover {
+  background-image: url("img/projects/Petfashion.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-card:nth-child(2):hover {
+  background-image: url("img/projects/Medica.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-card:nth-child(3):hover {
+  background-image: url("img/projects/Trend.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-card:nth-child(4):hover {
+  background-image: url("img/projects/Space.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-card:nth-child(5):hover {
+  background-image: url("img/projects/Airapp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-card:nth-child(6):hover {
+  background-image: url("img/projects/Movie.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-card h3 {
+  font-family: Crete Round, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+  margin-left: 13px;
+}
+
+.project-card p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-left: 13px;
+}
+
+.project-card ul {
+  list-style-type: none;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 12px;
+  margin-left: 13px;
+}
+
+.project-card li {
+  padding: 5px 10px 5px 10px;
+  background: rgba(255, 255, 255, 0.24);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+  justify-content: center;
+}
+
+.desktop-bar li:hover,
+.social li:hover,
+.contact-section-media li:hover,
+.placeholder-2:hover,
+.project-card:nth-child(1):hover,
+.project-card:nth-child(2):hover,
+.project-card:nth-child(3):hover,
+.project-card:nth-child(4):hover,
+.project-card:nth-child(5):hover,
+.project-card:nth-child(6):hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card button {
+  width: 100%;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  border: none;
+}
+
+.project-card:hover p {
+  display: none;
+}
+
+.project-card:hover ul {
+  display: none;
+}
+
+.project-card:hover h3 {
+  display: none;
+}
+
+.project-card button:enabled {
+  background-color: #ff6b00;
+  color: #f4f5f7;
+  border-color: #ff6b00;
+}
+
+.project-card button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 2px solid #f55800;
+}
+
+.project-card button:checked {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.project-card button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border-color: #f4f1f0;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-project-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .main-project-box{
+    flex-direction: row;
+    height: 448px;
+    gap: 24px;
+  }
+
+  .main-project-title {
+    color: #091E42;
+  }
+
+  .main-project-box > div:first-child {
+    flex-basis: 60%; /* 60% del ancho */
+  }
+
+  .main-project-box > div:last-child {
+    flex-basis: 40%; /* 40% del ancho */
+  }
+
+  .projects-container {
+    padding-left: 100px;
+  }
+
+  .project-card button 
+  {
+    display: none;
+  }
+
+  .project-card:hover button {
+    display: block;
+  }
+
+ .project-card {
+    width: calc(33.33% - 40px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+  }
+
+  .vector1 {
+    margin-bottom: 0;
+  }
+
+  .name-vector {
+    display: flex;
+    flex-direction: row;
+    gap:24px;
+    
+  }
+
+  .custom-line {
+    width: 794px;           /* Ancho de la línea */
+              
+    margin-top: 30px;       /* Espaciado opcional arriba de la línea */
+  }
+  
+  
+}
