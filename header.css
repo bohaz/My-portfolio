@@ -44,11 +44,10 @@ header {
   opacity: 1;
 }
 
-
 .custom-line2 {
   width: 295px;
   height: 1px;
-  background-color: #DFE1E6;
+  background-color: #dfe1e6;
   margin: 0 auto;
 }
 
@@ -64,7 +63,7 @@ header {
   gap: 24px;
 }
 
-.mobile-ul li a{
+.mobile-ul li a {
   list-style: none;
   text-decoration: none;
   color: white;
@@ -102,7 +101,7 @@ header {
 }
 
 .desktop-bar ul li a.active {
-  color: #ff6b00; 
+  color: #ff6b00;
 }
 
 @media only screen and (min-width: 768px) {
