@@ -13,8 +13,7 @@ header {
 }
 
 .bars {
-  width: 18px;
-  height: 12px;
+  width: 20px;
 }
 
 .header-container {
@@ -35,7 +34,21 @@ header {
   right: 0;
   width: 100%;
   position: fixed;
-  display: none;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.mobile-menu.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.custom-line2 {
+  width: 295px;
+  height: 1px;
+  background-color: #dfe1e6;
+  margin: 0 auto;
 }
 
 .visible {
@@ -50,11 +63,23 @@ header {
   gap: 24px;
 }
 
+.mobile-ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  line-height: 44px;
+  margin-left: 15%;
+}
+
 .close-button {
   display: flex;
   width: 95%;
   justify-content: flex-end;
-  margin-top: 30px;
+  margin-top: 4px;
+  margin-left: 12px;
 }
 
 .desktop-bar ul {
@@ -73,6 +98,10 @@ header {
   font-size: 1.2rem;
   font-weight: 600;
   font-family: "Inter", sans-serif;
+}
+
+.desktop-bar ul li a.active {
+  color: #ff6b00;
 }
 
 @media only screen and (min-width: 768px) {

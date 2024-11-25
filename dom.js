@@ -14,8 +14,8 @@ closeButton.addEventListener('click', () => {
 
 const menuLinks = document.querySelectorAll(".mobile-menu a[href^='#']");
 
-menuLinks.forEach((menulink) => {
-  menulink.addEventListener('click', () => {
+menuLinks.forEach((menuLink) => {
+  menuLink.addEventListener('click', () => {
     nav.classList.remove('visible');
   });
 });
@@ -28,7 +28,7 @@ const projects = [
     technologies: ['Ruby', 'Rails', 'Tailwind', 'Postgres'],
     image: 'img/projects/Finanpet.png',
     liveLink: '#',
-    sourceLink: '#',
+    sourceLink: 'https://github.com/bohaz/FinanPet',
   },
   {
     name: 'Pet Fashion',
@@ -51,7 +51,7 @@ const projects = [
     description: 'TransactTrends is a web application designed to help you manage and keep a detailed track of your financial transactions',
     image: 'img/projects/Trend.png',
     technologies: ['Ruby', 'Rails', 'CSS3'],
-    liveLink: '',
+    liveLink: '#',
     sourceLink: 'https://github.com/bohaz/Budget-app',
   },
   {
@@ -210,4 +210,33 @@ form.addEventListener('submit', (event) => {
     errorElement.textContent = '';
     localStorage.removeItem('formData');
   }
+});
+
+/* ------------------Active link---------------------*/
+
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('main section');
+  const navLinks = document.querySelectorAll('.desktop-bar ul li a');
+
+  const updateActiveLink = () => {
+    let currentSection = '';
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 100;
+      const sectionHeight = section.offsetHeight;
+
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(currentSection)) {
+        link.classList.add('active');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', updateActiveLink);
 });
