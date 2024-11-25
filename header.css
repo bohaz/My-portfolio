@@ -34,8 +34,16 @@ header {
   right: 0;
   width: 100%;
   position: fixed;
-  display: none;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
+
+.mobile-menu.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 
 .custom-line2 {
   width: 295px;
