@@ -14,8 +14,8 @@ closeButton.addEventListener('click', () => {
 
 const menuLinks = document.querySelectorAll(".mobile-menu a[href^='#']");
 
-menuLinks.forEach((menulink) => {
-  menulink.addEventListener('click', () => {
+menuLinks.forEach((menuLink) => {
+  menuLink.addEventListener('click', () => {
     nav.classList.remove('visible');
   });
 });
