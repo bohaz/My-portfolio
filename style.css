@@ -27,6 +27,7 @@ main {
 }
 
 .main-section .section-content {
+  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -331,6 +332,7 @@ ul {
   }
 
   .main-section .section-content {
+    width: 50%;
     flex-direction: column;
     order: 1;
     margin-top: 110px;
