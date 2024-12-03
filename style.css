@@ -132,7 +132,6 @@ ul {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  border-radius: 5px;
   border: none;
 }
 
@@ -286,7 +285,6 @@ ul {
   color: #fff;
   width: 131px;
   height: 48px;
-  border-radius: 5px;
   border: none;
 }
 
@@ -339,10 +337,6 @@ ul {
     margin-left: 60px;
   }
 
-  .about-me-p-div {
-    width: 50%;
-  }
-
   .main-section .section-content h1 {
     font-size: 72px;
     line-height: 81.5px;
@@ -378,6 +372,10 @@ ul {
     background-color: #262626;
     background-image: url(img/Frame.png);
     background-position: right 13%;
+  }
+
+  .about-me-p-div {
+    width: 50%;
   }
 
   .skills-container {
