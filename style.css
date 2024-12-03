@@ -339,6 +339,10 @@ ul {
     margin-left: 60px;
   }
 
+  .about-me-p-div {
+    width: 50%;
+  }
+
   .main-section .section-content h1 {
     font-size: 72px;
     line-height: 81.5px;
