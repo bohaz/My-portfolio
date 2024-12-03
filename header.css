@@ -100,7 +100,8 @@ header {
   font-family: "Inter", sans-serif;
 }
 
-.desktop-bar ul li a.active, .desktop-bar ul li a:hover {
+.desktop-bar ul li a.active,
+.desktop-bar ul li a:hover {
   color: #ff6b00;
 }
 
