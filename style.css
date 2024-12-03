@@ -27,7 +27,6 @@ main {
 }
 
 .main-section .section-content {
-  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -303,7 +302,7 @@ ul {
 .footer-custom-line {
   width: 100%;
   height: 1px;
-  background-color: #DFE1E6;
+  background-color: #dfe1e6;
   margin-bottom: 24px;
 }
 
