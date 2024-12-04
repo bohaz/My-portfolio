@@ -134,8 +134,10 @@ ul {
   border: none;
 }
 
-.about-me-line {
-  color: #fff;
+.about-custom-line {
+  width: 100%;
+  height: 1px;
+  background-color: #FFFFFF;
   margin-top: 209px;
 }
 
