@@ -151,6 +151,21 @@ ul {
   margin-top: 44px;
 }
 
+.language-title,
+.frameworks-title,
+.skills-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
 .skills-ul {
   color: #fff;
   font-family: 'Inter', sans-serif;
@@ -393,6 +408,12 @@ ul {
 
   .skills-ul {
     text-align: left;
+  }
+
+  .language-title,
+  .frameworks-title,
+  .skills-title {
+    justify-content: left;
   }
 
   /* Contact section */
