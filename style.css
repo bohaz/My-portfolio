@@ -151,7 +151,9 @@ ul {
   margin-top: 44px;
 }
 
-.language-title, .frameworks-title, .skills-title {
+.language-title,
+.frameworks-title,
+.skills-title {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -408,7 +410,9 @@ ul {
     text-align: left;
   }
 
-  .language-title, .frameworks-title, .skills-title {
+  .language-title,
+  .frameworks-title,
+  .skills-title {
     justify-content: left;
   }
 
