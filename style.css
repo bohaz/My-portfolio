@@ -29,7 +29,8 @@ main {
 /* Animation */
 
 .section-content h1,
-.section-content p, .social {
+.section-content p,
+.social {
   opacity: 0;
   transform: translateX(-100%);
   animation: slideIn 1s ease-out forwards;
@@ -44,7 +45,7 @@ main {
 }
 
 .section-content p:nth-child(3) {
-  animation-delay: 1s; 
+  animation-delay: 1s;
 }
 
 .social {
@@ -56,12 +57,12 @@ main {
     opacity: 0;
     transform: translateX(-100%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
-
 
 .main-section .section-content {
   display: flex;
@@ -174,7 +175,7 @@ ul {
 .about-custom-line {
   width: 100%;
   height: 1px;
-  background-color: #FFFFFF;
+  background-color: #fff;
   margin-top: 209px;
 }
 
