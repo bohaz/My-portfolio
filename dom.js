@@ -23,12 +23,12 @@ menuLinks.forEach((menuLink) => {
 /* ------------------Array--------------------*/
 const projects = [
   {
-    name: 'Finan-Pet',
-    description: 'Finanpet is a finance management application built on Ruby on Rails, leveraging Stimulus.js and Tailwind CSS for a responsive UI. This project allows users to efficiently track their incomes and expenses, featuring a relational database schema to ensure data integrity.',
-    technologies: ['Ruby', 'Rails', 'Tailwind', 'Postgres'],
-    image: 'img/projects/Finanpet.png',
-    liveLink: '#',
-    sourceLink: 'https://github.com/bohaz/FinanPet',
+    name: 'Sunset Experience',
+    description: 'Sunset Experience is a website designed to offer unique experiences on the Chilean coast. It allows visitors to discover, explore and book experiences related to love, wellness and nature.',
+    technologies: ['React', 'Jest', 'Tailwind', 'AWS'],
+    image: 'img/projects/Sunset.png',
+    liveLink: 'https://develop.www.sunsetexperience.cl/',
+    sourceLink: '#',
   },
   {
     name: 'Pet Fashion',
