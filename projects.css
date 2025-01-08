@@ -51,10 +51,15 @@
 .main-project-techs li {
   display: inline-block;
   padding: 5px 10px 5px 10px;
-  border: 1px solid #091e42;
   margin-bottom: 9px;
   margin-right: 5px;
 }
+
+.tech-icon {
+  width: 40px; 
+  margin-right: 8px; 
+}
+
 
 .main-project-button {
   width: 124px;
@@ -189,17 +194,9 @@
 }
 
 .project-card li {
-  padding: 5px 10px 5px 10px;
-  background: rgba(255, 255, 255, 0.24);
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: white;
   justify-content: center;
 }
 
@@ -266,6 +263,13 @@
   border-color: #f4f1f0;
 }
 
+.tech {
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
 @media only screen and (min-width: 768px) {
   .main-project-container {
     padding-left: 100px;
@@ -320,7 +324,7 @@
   }
 
   .custom-line {
-    width: 794px;           /* Ancho de la línea */
-    margin-top: 30px;       /* Espaciado opcional arriba de la línea */
+    width: 794px;           
+    margin-top: 30px;       
   }
 }

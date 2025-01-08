@@ -25,7 +25,7 @@ const projects = [
   {
     name: 'Sunset Experience',
     description: 'Sunset Experience is a website designed to offer unique experiences on the Chilean coast. It allows visitors to discover, explore and book experiences related to love, wellness and nature.',
-    technologies: ['React', 'Jest', 'Tailwind', 'AWS'],
+    technologies: ['React', 'Vite', 'AWS', 'Tailwind'],
     image: 'img/projects/Sunset.png',
     liveLink: 'https://develop.www.sunsetexperience.cl/',
     sourceLink: '#',
@@ -34,7 +34,7 @@ const projects = [
     name: 'Pet Fashion',
     description: 'This is a simple website that provides online visibility for our business. Its sleek, user-friendly design ensures effortless navigation, improving customer engagement and accessibility',
     image: 'img/projects/Petfashion.png',
-    technologies: ['React', 'Tailwind', 'CSS3'],
+    technologies: ['React', 'Tailwind', 'Material', 'Jest'],
     liveLink: 'https://petfashion.vercel.app/',
     sourceLink: 'https://github.com/bohaz/petfashion',
   },
@@ -42,7 +42,7 @@ const projects = [
     name: 'Medica',
     description: 'Is a dynamic web application for managing doctor directories and bookings. It offers an easy-to-use interface to seamlessly view, add, update and delete medical records',
     image: 'img/projects/Medica.png',
-    technologies: ['React', 'Rails', 'Postgres', 'Tailwind'],
+    technologies: ['React', 'Redux', 'Rails', 'Postgres', 'Tailwind'],
     liveLink: 'https://two4hours-doctor-frontend.onrender.com/',
     sourceLink: 'https://github.com/bohaz/24hour_doctor-front_end',
   },
@@ -50,7 +50,7 @@ const projects = [
     name: 'Transac Trends',
     description: 'TransactTrends is a web application designed to help you manage and keep a detailed track of your financial transactions',
     image: 'img/projects/Trend.png',
-    technologies: ['Ruby', 'Rails', 'Postgres', 'CSS3'],
+    technologies: ['Ruby', 'Rails', 'Postgres', 'Css'],
     liveLink: '#',
     sourceLink: 'https://github.com/bohaz/Budget-app',
   },
@@ -58,7 +58,7 @@ const projects = [
     name: 'Space Travelers Hub',
     description: 'Web Page connected with the real live data from the SpaceX API, to provide commercial and scientific space travel services, users can book rockets and join selected space missions.',
     image: 'img/projects/Space.png',
-    technologies: ['React', 'Redux', 'Bootstrap', 'API'],
+    technologies: ['React', 'Redux', 'Bootstrap', 'Api'],
     liveLink: 'https://space-travelers-hub-g5v6.onrender.com',
     sourceLink: 'https://github.com/bohaz/Space-Travelers-Hub',
   },
@@ -66,7 +66,7 @@ const projects = [
     name: 'Air Quality Monitoring App',
     description: 'Air Quality Monitoring App is an intuitive single Page Application (SPA) displaying real-time air pollution levels across Venezuelan states.',
     image: 'img/projects/Airapp.png',
-    technologies: ['React', 'Javascript', 'CSS3', 'API'],
+    technologies: ['React', 'Javascript', 'Css', 'Api'],
     liveLink: 'https://air-quality-monitoring-app.onrender.com/',
     sourceLink: 'https://github.com/bohaz/air-quality-monitoring-app',
   },
@@ -74,7 +74,7 @@ const projects = [
     name: 'Movie World',
     description: 'MovieWorld is an application that renders Tv Shows from TVMaze API and also has features like fetching and posting comments and Likes using the Involvment API. This is a collaborative project where we have applied all the skills obtained throughout the javascript module.',
     image: 'img/projects/Movie.png',
-    technologies: ['Javascript', 'HTML5', 'CSS3'],
+    technologies: ['Javascript', 'Html', 'Css'],
     liveLink: 'https://java-script-capstone-navy.vercel.app/',
     sourceLink: 'https://github.com/bohaz/JavaScript-Capstone',
   },
@@ -104,7 +104,11 @@ projects.slice(1).forEach((project, index) => {
   const projectTechnologies = document.createElement('ul');
   project.technologies.forEach((technology) => {
     const technologyItem = document.createElement('li');
-    technologyItem.textContent = technology;
+    const icon = document.createElement('img');
+    icon.src = `img/icons/${technology}.svg`;
+    icon.alt = `${technology} icon`;
+    icon.classList.add('tech-icon');
+    technologyItem.appendChild(icon);
     projectTechnologies.appendChild(technologyItem);
   });
   projectCard.appendChild(projectTechnologies);
@@ -141,8 +145,12 @@ openModal.forEach((button) => {
           <a class="pop-close"><img src="img/popclose.png"></a>
         </div>
         <ul class="pop-up-ul">
-          ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
-        </ul>
+  ${project.technologies
+    .map(
+      (tech) => `<li><img src="img/icons/${tech}.svg" alt="${tech} icon" class="tech-icon"></li>`,
+    )
+    .join('')}
+</ul>
         <div class="pop-box2">
           <img class="popimage" src="${project.image}" alt="${project.name}">
           <div class="pop-box3">
