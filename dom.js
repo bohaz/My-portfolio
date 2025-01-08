@@ -25,7 +25,7 @@ const projects = [
   {
     name: 'Sunset Experience',
     description: 'Sunset Experience is a website designed to offer unique experiences on the Chilean coast. It allows visitors to discover, explore and book experiences related to love, wellness and nature.',
-    technologies: ['React', 'Vite', 'AWS', 'Tailwind'],
+    technologies: ['React', 'Vite', 'Aws', 'Tailwind'],
     image: 'img/projects/Sunset.png',
     liveLink: 'https://develop.www.sunsetexperience.cl/',
     sourceLink: '#',
