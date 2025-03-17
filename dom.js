@@ -35,7 +35,7 @@ const projects = [
     description: 'This is a simple website that provides online visibility for our business. Its sleek, user-friendly design ensures effortless navigation, improving customer engagement and accessibility',
     image: 'img/projects/Petfashion.png',
     technologies: ['React', 'Tailwind', 'Material', 'Jest'],
-    liveLink: 'https://petfashion.vercel.app/',
+    liveLink: 'https://petfashiondogsalon.cl/',
     sourceLink: 'https://github.com/bohaz/petfashion',
   },
   {
